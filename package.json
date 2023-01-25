@@ -1,0 +1,28 @@
+{
+  "name": "@m-vallejo/test-lib",
+  "version": "1.0.2",
+  "description": "Library to test the NPM package",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M-Vallejo/test-lib.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "exit 0",
+    "build": "tsc --build",
+    "submit": "npm run build && publish"
+  },
+  "author": "Michael Vallejo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M-Vallejo/test-lib/issues"
+  },
+  "homepage": "https://github.com/M-Vallejo/test-lib#readme"
+}
